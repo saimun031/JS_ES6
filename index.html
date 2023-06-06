@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>JS </title>
+    <link rel="icon" type="image/x-icon" href="js.png">
+</head>
+
+<body>
+    <h2>What Can JavaScript Do?</h2>
+    <p id="demo1">JavaScript can change HTML content.</p>
+    <button type="button" onclick='document.getElementById("demo1").innerHTML = "Hello JavaScript!"'>Click Me!</button>
+
+
+    <h2>Demo JavaScript in Head</h2>
+    <p id="demo">A Paragraph</p>
+    <button type="button" onclick="myFunction()">Try it</button>
+    <script>
+        function myFunction() {
+            document.getElementById("demo").innerHTML = "Paragraph changed.";
+        }
+    </script>
+
+
+    <h2>My First Web Page</h2>
+    <p>My First Paragraph.</p>
+    <p id="demo2"></p>
+    <script>
+        document.getElementById("demo2").innerHTML = 5 + 6;
+    </script>
+
+
+    <p>Never call document.write after the document has finished loading.
+        It will overwrite the whole document.</p>
+    <script>
+        document.write(6 + 6);
+    </script>
+
+
+    <p>My first paragraph. New Window</p>
+    <button type="button" onclick="document.write(5 + 6)">Try it</button>
+
+
+    <!-- <p>My first paragraph. WA</p>
+    <script>
+        window.alert(5 + 6);
+    </script>
+
+
+    <p>My first paragraph. A</p>
+    <script>
+        alert(6 + 6);
+    </script> -->
+
+
+    <h2>The window.print() Method</h2>
+    <p>Click the button to print the current page.</p>
+    <button onclick="window.print()">Print this page</button>
+
+
+    <p>JavaScript statements are separated by semicolons.</p>
+    <p id="demo3"></p>
+    <script>
+        let a, b, c;
+        a = 5;
+        b = 6;
+        c = a + b;
+        document.getElementById("demo3").innerHTML = c;
+    </script>
+
+
+    <p>A <b>JavaScript program</b> is a list of <b>statements</b> to be executed by a computer.</p>
+    <p id="demo4"></p>
+    <script>
+        let x, y, z;  // Statement 1
+        x = 6;        // Statement 2
+        y = 6;        // Statement 3
+        z = x + y;    // Statement 4
+
+        document.getElementById("demo4").innerHTML =
+            "The value of z is " + z + ".";  
+    </script>
+
+
+    <p>Number can be written with or without decimals.</p>
+    <p id="demo5"></p>
+    <script>
+        document.getElementById("demo5").innerHTML = 10.50;
+    </script>
+
+
+    <p>JavaScript uses arithmetic operators to compute values (just like algebra).</p>
+    <p id="demo6"></p>
+    <script>
+        document.getElementById("demo6").innerHTML = (5 + 6) * 10;
+    </script>
+
+
+    <p>Expressions compute to values.</p>
+    <p id="demo7"></p>
+    <script>
+        document.getElementById("demo7").innerHTML = 5 * 10;
+    </script>
+
+
+    <p>Expressions compute to values.</p>
+    <p id="demo8"></p>
+    <script>
+        document.getElementById("demo8").innerHTML = "John" + " " + "Doe";
+    </script>
+
+
+    <!-- <h2>The <b>let</b> Keyword Creates Variables</h2>
+    <p id="demo9"></p>
+    <script>
+        let x, y;
+        x = 5 + 6;
+        y = x * 10;
+        document.getElementById("demo9").innerHTML = y;
+    </script> -->
+
+
+    <p>Try to change lastName to lastname.</p>
+    <p id="demo10"></p>
+    <p id="demo11"></p>
+    <script>
+        let lastname, lastName;
+        firstName = "FirstName: Doe";
+        lastName = "LastName: Peterson";
+        document.getElementById("demo10").innerHTML = firstName;
+        document.getElementById("demo11").innerHTML = lastName;
+    </script>
+
+    <button class="jsbutton"> Click me</button>
+
+    <script src="index.js" type="module"></script>
+    <script src="module.js"></script>
+
+</body>
+
+</html>
